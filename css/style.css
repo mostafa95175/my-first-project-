@@ -1,0 +1,588 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* common style */
+.container{
+    width: 90%;
+    margin: auto;
+}
+body{
+    margin: 0;
+   
+    background-image: url(../images/background.avif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* start navbar //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.nav{
+    background-color: black;
+    width: 100%;
+    height: 60px;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    opacity: 0.7;
+    z-index: 100;
+}
+
+.nav .container img{
+    width: 15%;
+    float: left;
+    height: 60px;
+}
+
+.nav .container .lists ul{
+    list-style: none;
+    text-transform: uppercase;
+    float: right;
+    color: aqua;
+
+}
+.nav .container .lists ul li{
+    margin-left: 20px;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.nav .container .lists ul li a {
+    text-decoration: none;
+    color: white;
+    
+}
+.nav .container .lists ul li a:hover{
+    color: chartreuse;
+}
+/* end navbar //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* start home //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/m1.webp);
+    background-size: cover;
+    position: relative;
+    
+}
+.home-overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: 2s;
+}
+.home:hover .home-overlay{
+    visibility: visible;
+    opacity: 1;
+}
+.home-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+}
+.home-title1{
+    color: white;
+    font-size: 50px;
+}
+.home-p1{
+    color: white;
+    margin: 20px 0px;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+}
+.home-overlay button{
+    width: 150px;
+    height: 60px;
+    border-radius: 8px;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: capitalize;
+    transition: 0;
+}
+.home-learnmore{
+    background-color: blue;
+    color: white;
+}
+
+.home-overlay button:hover{
+    opacity: 0.6;
+}
+
+
+
+
+
+/* end home ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* start sec1 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.sec1{
+    width: 100%;
+    height: 650px;
+    background-color: white;
+    overflow: auto;   
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+ .h1-line1{
+    width: 100px;
+    height: 4px;
+    background-color: blue;
+    border-radius: 5px;
+    margin: auto;
+    
+}
+.container .div1{
+    width: 26%;
+    height: 300px;
+    border: 1px solid black;
+    float: left;
+    margin-top: 70px;
+    text-align: center;
+    border-radius:10px ;
+    transition: 1s;
+}
+.sec1-adress{
+    margin-left: 11%;
+    margin-right: 11%;
+}
+.container .div1 i{
+    font-size: 30px;
+    color: rgb(27, 92, 214);
+    margin-top: 20px;
+}
+.container .div1:hover{
+    background-color: black;
+    color: white;
+}
+.container .div1 h2{
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+.container .div1 p{
+    margin-top: 40 px;
+    text-transform: capitalize;
+    font-size: 17px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.container .div1 a{
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+
+/* end sec1 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* start sec2 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.cars{
+    width: 100%;
+    height: 750px;
+    background-image: url(../images/car-background.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.cars-title{
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+.cars-title h2{
+    font-size: 40px;
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+.cars-line{
+    width: 150px;
+    height: 6px;
+    background-color: deepskyblue;
+    margin: auto;
+    border-radius: 6px;
+}
+.cars-car{
+    width: 30%;
+    height: 250px;
+    float: left;
+    text-align: center;
+    margin-top: 70px;
+    border-radius: 10px;
+    border: 2px solid black;
+    position: relative;    
+}
+.cars-overlay{
+    background-color:black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+.cars-car:hover .cars-overlay{
+    visibility: visible;
+    opacity: 0.6;
+}
+.car2, .car5{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.cars-item h2{
+    font-size: 40px;
+    margin-bottom: 5px;
+    color:deepskyblue;
+    opacity: 1;
+}
+.cars-item p{
+    margin: 30px;
+    font-weight: bold;
+    color: chartreuse;
+    opacity: 1;
+}
+.cars-item a{
+    text-decoration: none;
+
+}
+.cars-item a i{
+    color: cornflowerblue;
+    font-size: 30px;
+}
+.car1{
+    background-image: url(../images/car1.jpeg);
+    background-size: cover;
+}
+.car2{
+    background-image: url(../images/car2.jpeg);
+    background-size: cover;
+}
+.car3{
+    background-image: url(../images/car3.jpg);
+    background-size: cover;
+}
+.car4{
+    background-image: url(../images/car4.jpg);
+    background-size: cover;
+}
+.car5{
+    background-image: url(../images/car5.jpg);
+    background-size: cover;
+}
+.car6{
+    background-image: url(../images/car6.jpg);
+    background-size: cover;
+}
+
+/* end sec2/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* start sec3 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.models{
+    width: 100%;
+    height:600px;
+    background-color: white;
+
+}
+.models-title{
+    margin: auto;
+    text-align: center;
+
+}
+.models-h2{
+    font-size: 40px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.models-line{
+    width: 200px;
+    height: 5px;
+    background-color: blue;
+    margin: auto;
+
+}
+.models-content{
+    width:400px ;
+    
+    float: left;
+}
+.models-content i{
+    color: blue;
+    font-size: 25px;
+}
+.models-content p{
+    display: inline;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.models-img{
+    height: 400px;
+    float: right;
+    width: 500px;
+    background-image: url(../images/s-class.avif);
+    background-size: cover;
+    transition: 2s;
+    border-radius: 10px;
+    position: relative;
+}
+.models-price{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 2px solid blue;
+    border-radius: 50%;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.models-img:hover .models-price{
+    visibility: visible;
+    opacity: 1;
+}
+.models-price h2{
+    padding-top: 25px;
+    padding-left: 20px;
+}
+
+/* end sec3///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* start sec4 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.advantage{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(221, 221, 221);
+}
+.advantage-title{
+    margin: auto;
+    text-align: center;
+}
+.advantage-title h2{
+    font-size: 40px;
+    text-transform: capitalize;
+    padding-top: 20px;
+}
+.advantage-line{
+    width: 150px;
+    height: 5px;
+    background-color: blue;
+    margin: auto;
+
+}
+.advantage-content{
+    width: 30%;
+    height: 300px;
+    background-color: white;
+    float: left;
+    border: 1px solid black;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 2px;
+    position: relative;
+}
+.advantage-content::after{
+    width: 100%;
+    height: 0;
+    content: "";
+    background-color:rgb(179, 176, 176);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+}
+.advantage-content:hover::after{
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    transition: 2s;
+}
+.advantage-content2{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.advantage-content i{
+    display: block;
+    color: rgb(59, 59, 255);
+    font-size: 50px;
+    padding-top: 20px;
+}
+.advantage-content h2{
+    font-size: 30px;
+    padding-top: 15px;
+    text-transform: uppercase;
+}
+.advantage-content p{
+    text-transform: capitalize;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+.advantage-content a{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* end sec4///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* start sec5/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.developer{
+    width: 100%;
+    height: 700px;
+    background-color: rgb(80, 80, 80);
+}
+.developer-title{
+    margin: auto;
+    text-align: center;
+}
+.developer-title h2{
+    padding-top: 15px;
+    font-size: 40px;
+    text-transform: uppercase;
+    word-spacing: 4px;
+}
+.developer-line{
+    width: 150px;
+    height: 5px;
+    background-color: blue;
+    margin: auto;
+}
+.developer-content{
+   display: inline; 
+   float: left;
+    width: 40%;
+    height: 550px;
+    margin-left: 5%;
+    margin-top: 60px;
+    border: 2px solid black;
+}
+.developer-img{
+    background-image: url(../images/me.jpg);
+    height: 400px;
+    background-size: cover;
+}
+.developer-img2{
+    background-image: url(../images/himaa.jpg);
+}
+.developer-img i{
+    font-size: 30px;
+    display: block;
+    background-color: rgb(0, 131, 245);
+    color: white;
+    width: 50px;
+    height: 40px;
+    margin-left: auto;
+    line-height: 40px;
+    text-align: center;
+    
+}
+.developer-name{
+    text-align: center;
+}
+.developer-name h2{
+    padding-top: 10px;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.developer-name p{
+    text-transform: capitalize;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+/* end sec5////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* start last sec//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.contact{
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+    position: relative;
+}
+.contact-content{
+    float: left;
+    width: 50%;
+    height: 90%;
+    position: relative;
+}
+.contact-content h2{
+    color: dodgerblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 65px;
+    text-transform: capitalize;
+}
+.contact-type{
+    float: right;
+    margin: 100px 100px 0 100px;
+    height: 500px;
+   
+  
+    width: 30%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.contact-type input{
+    text-align: center;
+    margin: auto;
+    display: block;
+    width: 300px;
+    height: 70px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid green;
+    background-color: aqua;
+   
+    font-size: 30px;
+}
+
+.contact-type button{
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+.contact-type hr{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.contact-type a{
+    text-decoration: none;
+    font-size: 30px;
+}
+.contact-type a:hover{
+    color: brown;
+}
+.contact-type p{
+    font-size: 30px;
+    padding: 20px 0;
+}
+.copyrights{
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+}
+
+
+
+/* end last sec//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
